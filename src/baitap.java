@@ -103,7 +103,7 @@ public class baitap {
 
 
         //baitap 14: Đếm 1 chuỗi có bao nhiêu kí tự số và chữ cái
-
+        // sử dụng if else và dùng ASCII
 //        String kytu;
 //        int kytuso = 0, kytuchu = 0;
 //        Scanner sc = new Scanner(System.in);
@@ -126,6 +126,7 @@ public class baitap {
 
 
         //baitap 16: thay thế chữ kí tự a thành kí tự b loại trừ kí tự đầu tiên
+        // sử dụng substring để tách ra rồi cộng 2 string lại với nhau
         // Sample string:restart      Expected Result: resta$t
 
 //        String h = "restart";
@@ -179,6 +180,10 @@ public class baitap {
 //
 //        System.out.println("String in uppercase: " + upper_str);
 
-
+        //Baitap 22: Dùng String format
+        //1. format localdate theo dạng 10/08/1997
+//        LocalDate localDate = LocalDate.now();
+//        System.out.println (LocalDate);
+//        System.out.println(%0;2d/%0)
     }
     }
