@@ -20,8 +20,8 @@ public class baitaparraylist {
 //        String remove = list.remove(3);
 //        System.out.println("phần tử bị xóa là:" + remove);
 //        System.out.print("Cac phan tu con lai: ");
-//        for (String i : list) {
-//            System.out.print(i + " - ");
+//        for (String item : list) {
+//            System.out.print(item + " - ");
 //        }
 
         //Bài 3: Tìm chỉ số của 1 phần tử trong mảng
