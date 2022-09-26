@@ -63,7 +63,7 @@ public class Time {
         }
     }
     @Override
-    public String toString(){
+    public String toString(){     // sử dụng String leading zero
         String str ="";
         if(Hour == 12 || Hour == 0){
             str += 12 + ":";
@@ -93,17 +93,17 @@ public class Time {
 
     // Tăng gờ lên 1 đơn vị nếu 24h sẽ reset về 0
     public void tangHour(){
-        this.setHour(this.Hour +1);
+       setHour(Hour +1);
     }
     public void tangMinute(){
-        this.setMinute(this.Minute +1);
+        this.setMinute(Minute +1);
         if (this.Minute == 0){
             tangHour();
         }
     }
     public void tangSecond(){
-        this.setSecond(this.Second + 1);
-        if(this.Second == 0){
+        this.setSecond(Second + 1);
+        if(Second == 0){
             tangMinute();
         }
     }

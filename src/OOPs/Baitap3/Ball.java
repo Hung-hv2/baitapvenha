@@ -74,6 +74,6 @@ public class Ball {
         yDelta = -yDelta;
     }
     public String toString(){
-        return "Ball[("+x+", "+y+" , speed = ("+xDelta+","+yDelta+")]";
+        return "Ball[("+x+", "+y+" , speed = ("+xDelta+","+yDelta+")]";  //sử dụng String.format ()
     }
 }
