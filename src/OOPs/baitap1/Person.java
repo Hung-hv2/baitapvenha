@@ -12,16 +12,16 @@ public class Person {
             System.out.println("Nhập designation: ");
             this.designation = scanner.next();
         }
-        protected void learn(){
+        protected void learn() {
             System.out.println("learn...");
         }
-        protected void walk(){
+        protected void walk() {
             System.out.println("walk...");
         }
-        protected void eat(){
+        protected void eat() {
             System.out.println("eat...");
         }
-        public void showPerson(){
+        public void showPerson() {
             System.out.println("Nhập name: " + this.name + "   " + "Nhập designation: " + this.designation );
         }
 

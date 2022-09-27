@@ -16,6 +16,9 @@ public class Singer extends Person{
     protected void playgitar(){
         System.out.println("playgitar...");
     }
+    protected void eat(String food) {
+        System.out.println(food);
+    }
 
 
     public void showSinger() {

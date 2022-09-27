@@ -10,7 +10,7 @@ public class Programmer extends Person {
         System.out.println("Nhập companyName: ");
         this.companyName = input.next();
     }
-    protected void coding(){
+    protected void coding() {
         System.out.println("Coding...");
     }
 
