@@ -4,7 +4,6 @@ public class DoublyLinkedList {
     Node head;
     // 4 Node A, B, C, D nối với nhau
 
-    // Thêm phần tử vào đầu
     public static class Node {
         int value;
         Node next;
@@ -30,6 +29,8 @@ public class DoublyLinkedList {
         }
     }
 
+
+    // Thêm vào đầu
     public void insertFirst(int value) {
         Node newNode = new Node(value);
         if (head == null) {
@@ -44,21 +45,42 @@ public class DoublyLinkedList {
         }
     }
 
-
+    // Thêm vào cuối
     public void insertEnd(int value) {
         Node newNode = new Node(value);
+        if(head == null) {
+            head = newNode;
+            head.next = null;
+        }else  {
+            head.next = newNode;
+            newNode.prev = head;
+            head = newNode;
+            head.next = null;
+        }
+    }
+
+    // Thêm vào vị trí bất kì
+    public void insertIndex(Node indexNode, int value) {
+        Node newNode = new Node(value);
+        if(indexNode == null) {
+            return;
+        }
     }
 
     public static void main(String[] args) {
         DoublyLinkedList dList = new DoublyLinkedList();
 
         // thêm vào đầu
-//        dList.insertFirst(5);
-//        dList.insertFirst(4);
-//        dList.insertFirst(6);
+        dList.insertFirst(5);
+        dList.insertFirst(4);
+        dList.insertFirst(6);
 
 
         //Thê, vào cuối
+//        dList.insertEnd(2);
+//        dList.insertEnd(3);
+//        dList.insertEnd(4);
+//        dList.insertEnd(5);
         dList.printLinkedList();
     }
 }
